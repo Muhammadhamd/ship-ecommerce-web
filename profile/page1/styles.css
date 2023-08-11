@@ -1,0 +1,501 @@
+body {
+    /* background-color: rgb(12, 33, 47); */
+    background: rgba(1, 77, 83, 1);
+
+}
+
+nav a,
+nav {
+    color: white;
+}
+
+nav {
+    padding: 2em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_menu ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+.main_menu>div img {
+    width: 250px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+nav ul>li {
+    font-size: 1.2em;
+}
+
+nav .btn {}
+
+.menu {
+    display: none;
+}
+
+.drop_down li:nth-child(1),
+.drop_down li:nth-child(2),
+.drop_down li:nth-child(3),
+.drop_down li:nth-child(4) {
+    display: none;
+}
+
+
+/* Section  */
+body>div:nth-child(2) {
+    display: flex;
+    padding: 1em 3em;
+    justify-content: center;
+    gap: 4em;
+    margin-bottom: 3em;
+}
+
+body>div:nth-child(2) .profile img {
+    width: 85px;
+    height: 80px;
+}
+
+body>div:nth-child(2) .leftCard {
+    width: 23em;
+    min-width: 23em;
+    box-shadow: 0 3px 20px rgba(19, 19, 19, 0.252);
+    outline: 2px solid rgba(191, 168, 136, 1);
+    outline-offset: -20px;
+}
+
+body>div:nth-child(2) .leftCard ul {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 5em;
+    gap: 1em;
+    height: 90vh;
+}
+
+body>div:nth-child(2) .leftCard ul li a {
+    font-weight: 600;
+    color: white;
+}
+
+body>div:nth-child(2) .rightCard {
+    box-shadow: 0 3px 20px rgba(19, 19, 19, 0.252);
+    outline: 2px solid rgba(191, 168, 136, 1);
+    outline-offset: -20px;
+    padding: 4em 5em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+body>div:nth-child(2) .rightCard>h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+}
+
+
+body>div:nth-child(2) .rightCard .info {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+body>div:nth-child(2) .rightCard .info>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.main {
+    display: none;
+}
+
+/* utility class */
+.fadeName {
+    color: rgb(218, 193, 157);
+}
+
+/* Hamburger Styling  */
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"); */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slider {
+    position: relative;
+    z-index: 11;
+    left: -280px;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+    background: rgba(1, 77, 83, 1);
+    box-shadow: 0 3px 20px rgba(19, 19, 19, 0.252);
+
+    transition: all .5s ease;
+}
+
+.slider ul {
+    padding: 2em 1em;
+}
+
+.slider ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+}
+
+.slider ul a:hover {
+    padding-left: 10px;
+}
+
+#check {
+    display: none;
+}
+
+label #listBtn,
+label #cancelBtn {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 3px 20px rgba(19, 19, 19, 0.252);
+    border: 2px solid rgba(191, 168, 136, 1);
+    background: transparent;
+    color: white;
+}
+
+label #listBtn {
+    left: 40px;
+    top: 130px;
+    font-size: 30px;
+    padding: 0 6px;
+    transition: all .5s;
+}
+
+label #cancelBtn {
+    z-index: 1111;
+    left: -195px;
+    top: 170px;
+    font-size: 25px;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+
+#check:checked~.slider {
+    left: -15px;
+}
+
+#check:checked~label #listBtn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancelBtn {
+    left: 195px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 1300px) {
+    #menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        gap: 2em;
+    }
+
+    .menu .drop_down li img {
+        display: none;
+    }
+
+    .toggle_btn {
+        font-size: 2em;
+    }
+
+    .drop_down {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .drop_down {
+        position: absolute;
+        right: 2rem;
+        top: 65px;
+        right: 220px;
+        /* display: none; */
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .drop_down li {
+        list-style: none;
+    }
+
+    .drop_down li a>i {
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+    }
+
+    .drop_down.open {
+        height: 200px;
+    }
+
+    .main_menu {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu>img {
+        display: none;
+    }
+
+    .menu .drop_down li img {
+        display: block;
+    }
+
+    .drop_down {
+        position: absolute;
+        right: 2rem;
+        top: 65px;
+        right: 90px;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .drop_down.open {
+        height: 250px;
+    }
+
+    .main_menu {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    body>div:nth-child(2) {
+        padding: 1em 2em;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .main_menu>ul>li {
+        font-size: 1em;
+    }
+
+    .drop_down {
+        position: absolute;
+        right: 2rem;
+        top: 65px;
+        right: 85px;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    body>div:nth-child(2) .leftCard {
+        display: none;
+    }
+
+    .main {
+        display: block;
+    }
+
+    /* body> div:nth-child(2) .leftCard{
+        min-width: 0;
+    } */
+    body>div:nth-child(2) {
+        /* display: inline-block; */
+        padding: 1em;
+        justify-content: flex-start;
+        gap: 1em;
+    }
+
+    body>div:nth-child(2) .rightCard {
+        position: relative;
+        right: 130px;
+    }
+
+    .slider {
+        transition: all .5s ease;
+    }
+}
+
+@media (max-width: 842px) {
+    nav {
+        padding: 2em;
+    }
+
+    .drop_down {
+        position: absolute;
+        right: 2rem;
+        top: 65px;
+        right: 60px;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+
+@media (max-width: 757px) {
+    .main_menu>ul {
+        display: none;
+    }
+
+    .drop_down li:nth-child(1),
+    .drop_down li:nth-child(2),
+    .drop_down li:nth-child(3),
+    .drop_down li:nth-child(4) {
+        display: block;
+    }
+
+    .drop_down {
+        top: 65px;
+        right: 60px;
+        gap: 1em;
+        width: 300px;
+    }
+
+    .drop_down.open {
+        height: 450px;
+    }
+}
+
+@media (max-width:664px) {
+    body>div:nth-child(2) .rightCard {
+        right: 170px;
+        padding: 4em 3em;
+    }
+}
+
+@media (max-width:580px) {
+    body>div:nth-child(2) .rightCard .info>div {
+        flex-direction: column;
+        gap: 1em;
+    }
+  
+}
+@media (max-width:533px) {
+    body>div:nth-child(2) .rightCard>h1 {
+        font-size: 24px;
+        color: white;
+        font-weight: 600;
+        
+    }
+    body>div:nth-child(2) .rightCard .info {
+        width: 15em;
+    }
+}
+@media (max-width:460px) {
+    nav {
+        padding: 1em;
+    }
+    .drop_down {
+        top: 65px;
+        right: 0px;
+        width: 100%;
+    }
+    label #listBtn {
+        left: 20px;
+        top: 95px;
+    }
+    
+    label #cancelBtn {
+        top: 135px;
+    }
+    body>div:nth-child(2) .rightCard {
+        right: 200px;
+    }
+}

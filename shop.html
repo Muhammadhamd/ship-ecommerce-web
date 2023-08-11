@@ -18,10 +18,10 @@
                 <!-- main menu  -->
                 <div class="main_menu">
                   <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Dealer info</a></li>
-                    <li><a href="">boat for sale</a></li>
-                    <li><a href="">Sale a boat</a></li>
+                    <li class="font-semibold"><a href="./">Home</a></li>
+                    <li ><a href="./contact.html">Dealer info</a></li>
+                    <li ><a href="./shop.html">boat for sale</a></li>
+                    <li ><a href="./sellpage.html">Sale a boat</a></li>
                   </ul>
                   <div class="border border-[rgb(191_168_138)]">
                     <!-- middle logo  -->
@@ -30,17 +30,17 @@
                 </div>
                 <!-- large Screen menu  -->
                 <ul id="menu">
-                  <li><a href="">Service</a></li>
-                  <li><a href="">Did you know?</a></li>
+                  <li><a href="./services.html">Service</a></li>
+                  <li><a href="./didyouknow.html">Did you know?</a></li>
                   <li>
                     <a href=""><i class="bi bi-heart"></i></a>
                   </li>
                   <li>
                     <a href=""><i class="bi bi-trash"></i></a>
                   </li>
-                  <button class="btn">Login</button>
+                  <button class="btn" id="loginbtn">Login</button>
                 </ul>
-          
+            
                 <!-- drop down components  -->
                 <div class="menu">
                   <div class="toggle_btn">
@@ -51,22 +51,23 @@
                     <li><a href="">Dealer info</a></li>
                     <li><a href="">boat for sale</a></li>
                     <li><a href="">Sale a boat</a></li>
-          
+            
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Did you know?</a></li>
                     <li>
-                      <a href="#"><i class="bi bi-heart"></i></a>
+                      <a href=""><i class="bi bi-heart"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="bi bi-trash"></i></a>
                     </li>
                     <li>
-                      <button class="btn">Login</button>
+                      <button class="btn" id="loginbtn">Login</button>
                     </li>
                   </div>
                   <button class="btn">Login</button>
                 </div>
               </nav>
+        </nav>
               <div class="h-[80vh] flex  justify-start items-center gap-[10px]">
                <div class="mb-[2%] md:ml-[100px]">
                 <h1 class="text-5xl font-bold tracking-tight md:mb-[30px] mb-[10px]">Shop</h1>
@@ -76,12 +77,35 @@
                </div>
               </div>
          </div>
-         <div>
-            <div class=" flex max-w-[1000px]">
-                <div>
-                    
-                </div>
+         <div class="mb-6">
+            <div class=" block md:flex mt-[40px] justify-center md:mt-[100px]">
+                <div class="mb-4 md:max-w-[300px] w-full p-5 shadow-[0px_0px_5px_#000000bf] max-h-[500px]">
+                   <div class="border border-[#BFA888] p-3">
+                    <div class=" pb-[40px] md:pb-[70px]">
+                    <h1 class="text-2xl tracking-tight font-semibold my-[20px]">Filter</h1>
 
+                    </div>
+                    <div class="h-[0.6px] bg-[#ffffff33] max-full mx-3 mb-2"> </div>
+                    <div class=" pb-[40px] md:pb-[70px]">
+                        <label for="">
+                            <span>From $</span>
+                            <input type="number" class="bg-transparent outline-none w-[80px]">
+                        </label>
+                        <label for="">
+                            <span>To $</span>
+                            <input type="number" class="bg-transparent outline-none w-[80px]">
+                        </label>
+                    </div>
+                    <div class="h-[0.6px] bg-[#ffffff33] max-full mx-3 mb-2"> </div>
+                   
+                    <div>
+                        <h1 class="text-2xl tracking-tight font-semibold my-[20px]">Express Delivery</h1>
+                        <select name="" id="" class="bg-transparent outline-none w-full">
+                            <option value="">Express delivery</option>
+                        </select>
+                    </div>
+                   </div>
+                </div>
                 <div>
                     <div class="flex justify-end">
                         <div class="border max-w-[250px] w-full flex">
@@ -90,20 +114,7 @@
                         </div>
                     </div>
                     <div class="flex flex-wrap max-w-[900px] gap-[20px] justify-center mt-5">
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
+                      
                         <div class="max-w-[250px] border">
                             <div class="  border-b">
                                 <div class="m-2">
@@ -188,133 +199,11 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
-                            <div class="  border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
+                        
+                     
+                        
                        </div>
+                    <div class="flex justify-center text-slate-500 my-4"><a href="">See more</a></div>   
                 </div>
             </div>
          </div>
