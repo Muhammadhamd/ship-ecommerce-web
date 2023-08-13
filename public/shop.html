@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/animation.css">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -13,32 +17,32 @@
 </head>
 <body class='bg-[#014d53] text-white'>
     <div>
-        <div class=" text-white " style="background-image: url('./images/Frame\ 9.jpg'); background-size: cover;">
-            <nav>
+        <div class=" text-white " style="background-image: url('../images/Frame\ 9.jpg'); background-size: cover;">
+              <nav>
                 <!-- main menu  -->
                 <div class="main_menu">
                   <ul>
-                    <li class="font-semibold"><a href="./">Home</a></li>
-                    <li ><a href="./contact.html">Dealer info</a></li>
-                    <li ><a href="./shop.html">boat for sale</a></li>
-                    <li ><a href="./sellpage.html">Sale a boat</a></li>
+                    <li class="font-semibold" style="--i: 1"><a href="../">Home</a></li>
+                    <li style="--i: 2"><a href="./contact.html" >Dealer info</a></li>
+                    <li style="--i: 3"><a href="./shop.html" >boat for sale</a></li>
+                    <li style="--i: 4"><a href="./sellpage.html" >Sale a boat</a></li>
                   </ul>
-                  <div class="border border-[rgb(191_168_138)]">
+                  <div class="border border-[rgb(191_168_138)]" style="--i: 5">
                     <!-- middle logo  -->
-                    <img src="./images/shiplogo.png" />
+                    <img src="../images/shiplogo.png" />
                   </div>
                 </div>
                 <!-- large Screen menu  -->
                 <ul id="menu">
-                  <li><a href="./services.html">Service</a></li>
-                  <li><a href="./didyouknow.html">Did you know?</a></li>
-                  <li>
-                    <a href=""><i class="bi bi-heart"></i></a>
+                  <li class="--i:6"><a href="./services.html" >Service</a></li>
+                  <li class="--i:7"><a href="./didyouknow.html" >Did you know?</a></li>
+                  <li style="--i:8">
+                    <a href=""><i class="bi bi-heart" ></i></a>
                   </li>
-                  <li>
+                  <li style="--i:9">
                     <a href=""><i class="bi bi-trash"></i></a>
                   </li>
-                  <button class="btn" id="loginbtn">Login</button>
+                  <button class="btn" id="loginbtn" style="--i:10">Login</button>
                 </ul>
             
                 <!-- drop down components  -->
@@ -47,13 +51,13 @@
                     <i class="bi bi-list"></i>
                   </div>
                   <div class="drop_down">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Dealer info</a></li>
-                    <li><a href="">boat for sale</a></li>
-                    <li><a href="">Sale a boat</a></li>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="./about.html">Dealer info</a></li>
+                    <li><a href="./shop.html">boat for sale</a></li>
+                    <li><a href="./sellpage.html">Sale a boat</a></li>
             
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Did you know?</a></li>
+                    <li><a href="./services.html">Service</a></li>
+                    <li><a href="./didyouknow.html">Did you know?</a></li>
                     <li>
                       <a href=""><i class="bi bi-heart"></i></a>
                     </li>
@@ -68,10 +72,10 @@
                 </div>
               </nav>
         </nav>
-              <div class="h-[80vh] flex  justify-start items-center gap-[10px]">
+              <div class="h-[80vh] flex  max-[767px]:justify-center justify-start items-center gap-[10px]">
                <div class="mb-[2%] md:ml-[100px]">
-                <h1 class="text-5xl font-bold tracking-tight md:mb-[30px] mb-[10px]">Shop</h1>
-                <p class="max-w-[400px] font-[100]">
+                <h1 class="text-5xl font-bold tracking-tight md:mb-[30px] mb-[10px] max-[500px]:text-2xl">Shop</h1>
+                <p class="max-w-[400px] font-[100] max-[500px]:text-base">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis incidunt blanditiis provident repellendus quam odit nemo facere modi vero odio itaque voluptates iure, iusto ratione, fugiat nisi nam ducimus illum.
                 </p>
                </div>
@@ -109,16 +113,16 @@
                 <div>
                     <div class="flex justify-end">
                         <div class="border max-w-[250px] w-full flex">
-                            <input type="text" name="" placeholder="sort" id="" class="max-w-[250px] w-full bg-transparent px-2 py-1  text-sm">
+                            <input type="text" name="" placeholder="sort" id="" class="outline-none max-w-[250px] w-full bg-transparent px-2 py-1  text-sm">
                             <button class="py-1 px-3 bg-white text-black"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     <div class="flex flex-wrap max-w-[900px] gap-[20px] justify-center mt-5">
                       
-                        <div class="max-w-[250px] border">
+                        <div class="max-w-[250px] border" data-aos="fade-up">
                             <div class="  border-b">
                                 <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
                                 </div>
                                 <h1 class="text-xl ml-2 mb-3">
                                     agaghhfaf fsld kiorj ksld kg
@@ -129,10 +133,10 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
-                        <div class="max-w-[250px] border">
+                        <div class="max-w-[250px] border" data-aos="fade-up">
                             <div class="  border-b">
                                 <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
                                 </div>
                                 <h1 class="text-xl ml-2 mb-3">
                                     agaghhfaf fsld kiorj ksld kg
@@ -143,10 +147,10 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
-                        <div class="max-w-[250px] border">
+                        <div class="max-w-[250px] border" data-aos="fade-up">
                             <div class="  border-b">
                                 <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
                                 </div>
                                 <h1 class="text-xl ml-2 mb-3">
                                     agaghhfaf fsld kiorj ksld kg
@@ -157,24 +161,10 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
-                        <div class="max-w-[250px] border">
-                            <div class="border-b">
-                                <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
-                                </div>
-                                <h1 class="text-xl ml-2 mb-3">
-                                    agaghhfaf fsld kiorj ksld kg
-                                </h1>
-                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
-                            </div>
-                            <div>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
-                            </div>
-                        </div>
-                        <div class="max-w-[250px] border">
+                        <div class="max-w-[250px] border" data-aos="fade-up">
                             <div class="  border-b">
                                 <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
                                 </div>
                                 <h1 class="text-xl ml-2 mb-3">
                                     agaghhfaf fsld kiorj ksld kg
@@ -185,10 +175,10 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
-                        <div class="max-w-[250px] border">
+                        <div class="max-w-[250px] border" data-aos="fade-up">
                             <div class="  border-b">
                                 <div class="m-2">
-                                    <img src="./images/NoPath - Copy (4).jpg" alt="">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
                                 </div>
                                 <h1 class="text-xl ml-2 mb-3">
                                     agaghhfaf fsld kiorj ksld kg
@@ -199,18 +189,33 @@
                                 <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
                             </div>
                         </div>
+                        <div class="max-w-[250px] border" data-aos="fade-up">
+                            <div class="  border-b">
+                                <div class="m-2">
+                                    <img src="../images/NoPath - Copy (4).jpg" alt="">
+                                </div>
+                                <h1 class="text-xl ml-2 mb-3">
+                                    agaghhfaf fsld kiorj ksld kg
+                                </h1>
+                                <p class="text-slate-200 text-[15px] ml-2 mb-3">35faihg , 45faf ,12fjklf</p>
+                            </div>
+                            <div>
+                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]">$6,000,00</h1>
+                            </div>
+                        </div>
+
                         
                      
                         
                        </div>
-                    <div class="flex justify-center text-slate-500 my-4"><a href="">See more</a></div>   
+                    <div class="flex justify-center text-slate-500 my-4" data-aos="fade-left"><a href="">See more</a></div>   
                 </div>
             </div>
          </div>
-         <footer style="background-image: url('./images/footer/footer.jpg'); background-size: cover;" class="text-white">
+         <footer style="background-image: url('../images/footer/footer.jpg'); background-size: cover;" class="text-white">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                        <img src="./images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
+                        <img src="../images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
                       
                   <div class="flex flex-wrap gap-[50px] w-full justify-center">
                     <ul class="flex flex-col items-start text-[17px] font-[100]">
@@ -270,6 +275,11 @@
         </footer>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./src/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- <script src=".//src/login.js"></script> -->
+<script src="../src/navba.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
