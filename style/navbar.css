@@ -18,6 +18,16 @@ nav {
   display: flex;
   gap: 1.5em;
 }
+.main_menu ul li a, #menu li a{
+
+  transition: all .2s;
+}
+.main_menu ul li a:hover , #menu li a:hover{
+
+  border-bottom: 2px solid rgb(191 , 168 ,138);
+  padding-bottom: 5px;
+
+}
 .main_menu > div img {
   width: 250px;
 }
