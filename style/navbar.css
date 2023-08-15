@@ -14,35 +14,48 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.main_menu ul {
+.main_menu ul , #menu{
   display: flex;
-  gap: 1.5em;
-  font-size: 1em;
+  gap: .5em;
+  font-size: 115%;
 }
-.main_menu ul li a, #menu li a{
+.main_menu ul li , #menu li {
+  display: flex;
+  /* align-items: center; */
+}
+.main_menu ul li span, #menu li span{
+  
+  display: flex;
+  align-items: center;
+  width: 24px;
+  /* transition: ease .3s; */
+}
+.main_menu ul li span div, #menu li span div{
+  width: 0px;
+  transform: rotate(180deg);
+}
+.main_menu ul li:hover  span div, #menu li:hover span  div{
+  /* position: absolute; */
+  width: 23px;
+  margin: 0 1px 0 0;
+  height: 3px;
+  right: 101%;
+  background-color: rgb(191 , 168 ,138);
+  /* padding-bottom: 5px; */
 
-  transition: all .2s;
 }
-.main_menu ul li a:hover , #menu li a:hover{
+/* hover slide box */
 
-  border-bottom: 2px solid rgb(191 , 168 ,138);
-  padding-bottom: 5px;
-
-}
-.main_menu > div img {
-  width: 100%;
-}
 nav > ul {
   display: flex;
-  gap: 1.5em;
   align-items: center;
   /* font-size:1em; */
 }
 nav ul  li {
-  font-size: 120%;
+  font-size: 100%;
 }
 nav .btn {
-  background: rgba(191, 168, 136, 1);
+  background: white;
   border-radius: 3px;
   font-weight: 600;
   padding: 10px 30px;
@@ -249,4 +262,13 @@ nav{
       transform: translateY(0px);
       opacity: 1;
   } 
+}
+
+.hide-scrollbr::-webkit-scrollbar{
+  opacity: 0.2;
+  height: 13px;
+}
+.hide-scrollbr::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.192);
+  height: 2px;
 }
