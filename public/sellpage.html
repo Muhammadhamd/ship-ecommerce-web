@@ -13,62 +13,62 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="bg-[#014d53]">
+<body class="bg-[#014d53] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px]">
     <div>
         <div class=" text-white " style="background-image: url('../images/howWeHelp/Frame\ 1.jpg'); background-size: cover;">
-          <nav>
-            <!-- main menu  -->
-            <div class="main_menu">
-              <ul>
-                <li class="font-semibold" style="--i: 1"><a href="../">Home</a></li>
-                <li style="--i: 2"><a href="./contact.html" >Dealer info</a></li>
-                <li style="--i: 3"><a href="./shop.html" >boat for sale</a></li>
-                <li style="--i: 4"><a href="./sellpage.html" >Sale a boat</a></li>
-              </ul>
-              <div class="border border-[rgb(191_168_138)]" style="--i: 5">
-                <!-- middle logo  -->
-                <img src="../images/shiplogo.png" />
-              </div>
-            </div>
-            <!-- large Screen menu  -->
-            <ul id="menu">
-              <li class="--i:6"><a href="./services.html" >Service</a></li>
-              <li class="--i:7"><a href="./didyouknow.html" >Did you know?</a></li>
-              <li style="--i:8">
-                <a href=""><i class="bi bi-heart" ></i></a>
-              </li>
-              <li style="--i:9">
-                <a href=""><i class="bi bi-trash"></i></a>
-              </li>
-              <button class="btn" id="loginbtn" style="--i:10">Login</button>
+          nav>
+          <!-- main menu  -->
+          <div class="main_menu">
+            <ul>
+              <li class="font-semibold" style="--i: 1"><a href="../">Home</a></li>
+              <li style="--i: 2"><a href="./public/contact.html" >Dealer info</a></li>
+              <li style="--i: 3"><a href="./public/shop.html" >boat for sale</a></li>
+              <li style="--i: 4"><a href="./public/sellpage.html" >Sale a boat</a></li>
             </ul>
-        
-            <!-- drop down components  -->
-            <div class="menu">
-              <div class="toggle_btn">
-                <i class="bi bi-list"></i>
-              </div>
-              <div class="drop_down">
-                <li><a href="../">Home</a></li>
-                <li><a href="./about.html">Dealer info</a></li>
-                <li><a href="./shop.html">boat for sale</a></li>
-                <li><a href="./sellpage.html">Sale a boat</a></li>
-        
-                <li><a href="./services.html">Service</a></li>
-                <li><a href="./didyouknow.html">Did you know?</a></li>
-                <li>
-                  <a href=""><i class="bi bi-heart"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-trash"></i></a>
-                </li>
-                <li>
-                  <button class="btn" id="loginbtn">Login</button>
-                </li>
-              </div>
-              <button class="btn">Login</button>
+            <div class="border border-[rgb(191_168_138)] w-[35%]" style="--i: 5">
+              <!-- middle logo  -->
+              <img src="./images/shiplogo.png" class="w-[100%]">
             </div>
-          </nav>
+          </div>
+          <!-- large Screen menu  -->
+          <ul id="menu">
+            <li class="--i:6"><a href="./public/services.html" style="">Service</a></li>
+            <li class="--i:7"><a href="./public/didyouknow.html" style="">Did you know?</a></li>
+            <li style="--:8">
+              <a href=""><i class="bi bi-heart" ></i></a>
+            </li>
+            <li style="--i:9">
+              <a href=""><i class="bi bi-cart"></i></a>
+            </li>
+            <button class="btn" id="loginbtn" style="--i:10">Login</button>
+          </ul>
+      
+          <!-- drop down components  -->
+          <div class="menu">
+            <div class="toggle_btn">
+              <i class="bi bi-list"></i>
+            </div>
+            <div class="drop_down">
+              <li><a href="./">Home</a></li>
+              <li><a href="./public/about.html">Dealer info</a></li>
+              <li><a href="./public/shop.html">boat for sale</a></li>
+              <li><a href="./public/sellpage.html">Sale a boat</a></li>
+      
+              <li><a href="./public/services.html">Service</a></li>
+              <li><a href="./public/didyouknow.html">Did you know?</a></li>
+              <li>
+                <a href=""><i class="bi bi-heart"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-cart"></i></a>
+              </li>
+              <li>
+                <button class="btn" id="loginbtn">Login</button>
+              </li>
+            </div>
+            <button class="btn">Login</button>
+          </div>
+        </nav>
               <div class="h-[80vh] flex justify-center items-center">
                 <h1 class="text-5xl font-semibold">Sell a boat</h1>
 
@@ -292,6 +292,7 @@
                     </footer>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../src/tailwindConfig.js"></script>
     <script src="./src/navbar.js"></script>
 </body>
 </html>
