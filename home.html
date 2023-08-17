@@ -10,10 +10,14 @@
 <link rel="stylesheet" href="./style/animation.css">
 <link rel="stylesheet" href="./style/navbar.css">
 <!-- <link rel="stylesheet" href="./public/style/styles.css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
  <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
+  <link rel="stylesheet" href="./style/navslider.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Acme&family=Inter+Tight:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@700&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch&family=Ubuntu+Condensed&family=Ubuntu:wght@500&family=Work+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -33,35 +37,14 @@
             display: none;
         }
     }
-     ul li .slide-show{
-        width: 300px;
-        background-color: white;
-        color: black;
-        position: absolute;
-        top: 40px;
-        display: none;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
-        overflow: hidden;
-        transition: ease-in-out 1s;
-    }
-      ul li .slide-show div{
-       
-        color: black;
-        width: 100%;
-        /* display: none; */
-    }
-     ul li:hover .slide-show{
-        display: flex;
-    }
+    
 </style>
 
-<body class="bg-[#0e565c] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px] ">
+<body class="bg-[#014d53] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px] ">
     <div class="">
         
         <div class="w-full h-[100vh] bg1">
-            <nav class="text-[90%] font-[100]">
+            <nav style="font-family: 'Urbanist';" class="text-[90%] font-[100]">
                 <!-- main menu  -->
                 <div class="main_menu">
                   <ul>
@@ -138,26 +121,26 @@
                 </div>
               </nav>
             <div class="w-full flex  justify-between text-white  max-h-[500px] h-[100%] items-start">
-                <div class=" ml-[20px]  md:ml-[80px] text-xl flex flex-col justify-center max-h-[50vh] h-[100%]">
-                    <ul class="gap-[10px] text-xl mt-2">
+                <div class=" ml-[20px]  md:ml-[60px] text-xl flex flex-col justify-end  max-h-[44vh] h-[100%]">
+                    <ul class="gap-[10px] flex flex-col text-xl mt-2">
                         <li >
-                           <a href=""><i class="shadow-[0px_0px_2px_1px_black]  hover:scale-[1.3]  hover:shadow-[0px_0px_7px_black]  fa fa-facebook-square"></i></a>
+                           <a href=""><img  class="w-[70%] hover:scale-[1.2] transaction-[.3s] " src="./images/Icon awesome-facebook-square.png" alt=""></a>
                         </li>
                         <li >
-                            <a href=""><i class="  hover:scale-[1.3] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-twitter-square"></i></a>
+                            <a href=""><img class="w-[70%] hover:scale-[1.2] transaction-[ease-in-out_0.3s] "  src="./images/Icon awesome-twitter.png" alt=""></a>
                          </li>
                          <li >
-                           <a href=""><i class=" hover:scale-[1.3] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-instagram"></i></a>
+                           <a href=""><img class="w-[70%] hover:scale-[1.2] transaction-[ease-in-out_0.3s] "  src="./images/instagram (1).png" alt=""></a>
                         </li>
                     </ul>
                 </div>
                 <div class="w-[30%] min-[400px]:min-w-[400px] mt-[40px]">
                     <img src="./images/logo.png" alt="" class="w-full header-logo">
                 </div>
-                <div class=" mr-[20px]  md:mr-[80px] text-base flex flex-col justify-center max-h-[50vh] h-[100%]">
+                <div class=" mr-[20px]  md:mr-[80px] text-base flex flex-col justify-end max-h-[47vh] h-[100%]">
                     <ul class="gap-[10px]">
-                        <li class="font-[100] hover:scale-[1.1] scale-[.9]">
-                           <a class="flex flex-col  max-[500px]:block" href=""><i>Call</i> <div class="px-[1%] py-[2%] rounded-full bg-white flex justify-center items-center font-bold"><i class="text-black bi bi-telephone-fill"></i></div> <i>us</i></a>
+                        <li class="font-[100] hover:scale-[1.1] scale-[.8]">
+                           <a class="flex flex-col  max-[500px]:block" href=""><i>Call</i> <div class="px-[1%] py-[2%] rounded-full  flex justify-center items-center font-bold"><img src="./images/Subtraction 1.png" alt=""></div> <i>us</i></a>
                         </li>
                         
                         </li>
@@ -167,7 +150,7 @@
         </div>
         
        <div style="font-family: 'Playfair Display';">
-        <div class="bg-[#014d53] w-full text-white pt-[4%] pb-[4%]" style="background-image: url('./images/services-bg-2.png');    background-size: cover; font-family: 'Playfair Display'; 
+        <div class=" w-full text-white pt-[2%] pb-[4%]" style="background-image: url('./images/services-bg-2.png');    background-size: cover; font-family: 'Playfair Display'; 
         background-position-y: -184px;
         background-repeat: no-repeat;" >
             <div class="flex items-center flex-col">
@@ -175,15 +158,15 @@
                     <h1 class="h-[18px] text-4xl font-bold opacity-[.3]" style="transform: scale(1.05)" data-aos="slide-up">Featured yachts</h1>
                     <h1 class="text-4xl font-bold data-aos="slide-up">Featured yachts</h1>
                 </div>
-                <h3 class="text-[120%] font-[100] flex text-center md:max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0" data-aos="slide-right">Lorem ipsum dolor ngn d hd d
+                <h3 style="font-family: 'Urbanist';" class="text-[120%] font-[100] flex text-center md:max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0 font-regular" data-aos="slide-right">Lorem ipsum dolor ngn d hd d
                     hrejtwiorio sit amet, consectetur adipisicing elit. Enim ipsa asperiores quas.</h3>
             </div>
             <div class="flex flex-wrap gap-[40px] justify-center mt-5" data-aos="fade-up">
 
-                <div class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                <div style="font-family: 'Urbanist';" class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                     <div class="  border-b-2">
                         <div class="m-2">
-                           <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                           <img src="./images/NoPath - Copy (4).png" alt="" class="w-full">
                         </div>
                         <h1 class="text-2xl ml-2 mb-3">
                             North Castle Product Name
@@ -192,18 +175,18 @@
                     </div>
                     <div class="p-2 flex justify-between">
                         <div class="flex">
-                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-2xl ml-2 font-[100]">$7,000,00</h1>
-                            <h1 class="text-2xl ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
+                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-base ml-2 font-[100]">$7,000,00</h1>
+                                <h1 class="text-base ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
                         </div>
                         <div>
                             <h1 class="font-[100]">45 <i class="fa fa-star"></i></h1>
                         </div>
                     </div>
                 </div>
-                <div class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                <div style="font-family: 'Urbanist';" class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                     <div class="  border-b-2">
                         <div class="m-2">
-                           <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                           <img src="./images/NoPath - Copy (6).png" alt="" class="w-full">
                         </div>
                         <h1 class="text-2xl ml-2 mb-3">
                             North Castle Product Name
@@ -212,18 +195,18 @@
                     </div>
                     <div class="p-2 flex justify-between">
                         <div class="flex">
-                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-2xl ml-2 font-[100]">$7,000,00</h1>
-                            <h1 class="text-2xl ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
+                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-base ml-2 font-[100]">$7,000,00</h1>
+                                <h1 class="text-base ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
                         </div>
                         <div>
                             <h1 class="font-[100]">45 <i class="fa fa-star"></i></h1>
                         </div>
                     </div>
                 </div>
-                <div class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                <div style="font-family: 'Urbanist';" class="sm:min-w-[360px] w-[26%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                     <div class="  border-b-2">
                         <div class="m-2">
-                           <img src="./images/NoPath - Copy (5).jpg" alt="" class="w-full">
+                           <img src="./images/NoPath - Copy (2).png" alt="" class="w-full">
                         </div>
                         <h1 class="text-2xl ml-2 mb-3">
                             North Castle Product Name
@@ -232,8 +215,8 @@
                     </div>
                     <div class="p-2 flex justify-between">
                         <div class="flex">
-                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-2xl ml-2 font-[100]">$7,000,00</h1>
-                            <h1 class="text-2xl ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
+                            <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-base ml-2 font-[100]">$7,000,00</h1>
+                            <h1 class="text-base ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
                         </div>
                         <div>
                             <h1 class="font-[100]">45 <i class="fa fa-star"></i></h1>
@@ -245,7 +228,7 @@
 
             </div>
         </div>
-        <div class="bg-[#0e565c] text-white flex flex-wrap w-full overflow-hidden" style="font-family: 'Playfair Display';" >
+        <div class=" text-white flex flex-wrap w-full overflow-hidden" style="font-family: 'Playfair Display';" >
             <div class="   max-[1095px]:w-full w-[50%]" data-aos="slide-right">
                 <img src="./images/Frame 10 (1).jpg" alt="" class="w-[100%]">
             </div>
@@ -255,7 +238,7 @@
                     Yacht Brokers work like real estate agents
                 </h1>
                 <br>
-                <p class="text-[110%] max-w-[80%] font-[100]">
+                <p style="font-family: 'Urbanist';" class="text-[110%] max-w-[80%] font-[100]">
                     They are agents with whom people consult to find and purchase a boat, and whom people hire to list,
                     represent, and sell boats for them. Traditionally, the seller pays the commissions that a yacht
                     broker earns not the buyer. Yet, brokers have a duty to both buyer and seller in every transaction.
@@ -263,20 +246,40 @@
                 <button class="mt-[2%] bg-white shadow px-[2%] py-[1%] text-black">Read more</button>
             </div>
         </div>
-        <div class="bg-[#014d53] w-full text-white pt-[8%] pb-[30px] "
+        <div class=" w-full text-white pt-[4%] pb-[30px] "
             style="background-image:  url('./images/page2/hookbg2.png'); background-size: cover;">
 
             <div class="flex items-center flex-col">
                 <h1 class="text-4xl font-bold" data-aos="slide-up">Featured yachts</h1>
-                <h3 class="text-[120%] font-regular flex text-center md:max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0" data-aos="slide-right">Lorem ipsum dolor ngn d hd d
+                <h3 style="font-family: 'Urbanist';" class="text-[120%] font-regular flex text-center md:max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0" data-aos="slide-right">Lorem ipsum dolor ngn d hd d
                     hrejtwiorio sit amet, consectetur adipisicing elit. Enim ipsa asperiores quas.</h3>
             </div>
             <div class="mb-[4%]">
                 <div class="flex flex-wrap gap-[40px] justify-center mt-5 mb-[3%]"data-aos="fade-up">
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (4).png" alt="" class="w-full">
+                            </div>
+                            <h1 class="text-xl ml-2 mb-3 font-semibold">
+                                North Castle Product Name
+                            </h1>
+                            <p class="text-slate-200 text-base ml-2 mb-3 ">15 Guest . 12 Beds . 5 Cabins . 1 Bathrooms</p>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div class="flex">
+                                <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-base ml-2 font-[100]">$7,000,00</h1>
+                                <h1 class="text-base ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
+                            </div>
+                            <div>
+                                <h1 class="font-[100]">45 <i class="fa fa-star"></i></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-family: 'Urbanist';"  class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                        <div class="  border-b-2">
+                            <div class="m-2">
+                               <img src="./images/NoPath - Copy (6).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -293,10 +296,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (2).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -313,10 +316,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (2).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -333,10 +336,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (4).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -353,10 +356,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';"  class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (6).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -373,10 +376,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (2).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -393,30 +396,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
+                    <div style="font-family: 'Urbanist';" class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
                         <div class="  border-b-2">
                             <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
-                            </div>
-                            <h1 class="text-xl ml-2 mb-3">
-                                North Castle Product Name
-                            </h1>
-                            <p class="text-slate-200 text-base ml-2 mb-3">15 Guest . 12 Beds . 5 Cabins . 1 Bathrooms</p>
-                        </div>
-                        <div class="p-2 flex justify-between">
-                            <div class="flex">
-                                <h1 style="text-decoration: line-through;" class="tracking-[0.05rem]  text-xl ml-2 font-[100]">$7,000,00</h1>
-                                <h1 class="text-xl ml-2 font-semibold tracking-[0.05rem]"> $6,000,00</h1>
-                            </div>
-                            <div>
-                                <h1 class="font-[100]">45 <i class="fa fa-star"></i></h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sm:min-w-[260px] w-[21%] max-[600px]:w-[95%] border text-[#E8E8E8]">
-                        <div class="  border-b-2">
-                            <div class="m-2">
-                               <img src="./images/NoPath - Copy (4).jpg" alt="" class="w-full">
+                               <img src="./images/NoPath - Copy (2).png" alt="" class="w-full">
                             </div>
                             <h1 class="text-xl ml-2 mb-3">
                                 North Castle Product Name
@@ -439,7 +422,7 @@
             </div>
         </div>
         
-        <div class="bg-[#014d53] overflow-hidden w-full text-white   px-[5%] py-[3%]"
+        <div class=" overflow-hidden w-full text-white   px-[5%] py-[3%]"
             style="background-image:linear-gradient(   #014d53, #9a030000 35%), url('./images/Frame\ 11.jpg'); background-size: cover;">
             <div class="w-full flex justify-start mb-[5%]" data-aos="slide-left">
                 <div class="md:max-w-[37.1%]" >
@@ -448,7 +431,7 @@
                     <h1 class="text-4xl max-[500px]:text-2xl">Freedom</h1>
 
                     </div>
-                    <p class="text-base font-[100] max-[500px]:text-sm">We offer contact-free non-exclusive sales listings, that don’t
+                    <p style="font-family: 'Urbanist';" class="text-base font-regular max-[500px]:text-sm">We offer contact-free non-exclusive sales listings, that don’t
                         lock you in. Our Sales services are completely risk free. Cancel your listing at anytime for any
                         reason at all, at no charge.</p>
                     <ul class="mt-[5%] text-xl gap-4 flex flex-col max-[500px]:text-sm">
@@ -465,7 +448,7 @@
                     <h1 class="text-4xl max-[500px]:text-2xl">Trust</h1>
 
                     </div>
-                    <p class="text-base font-[100] max-[500px]:text-sm">With our vast marketing channels, years of industry networking and
+                    <p style="font-family: 'Urbanist';" class="text-base font-regular max-[500px]:text-sm">With our vast marketing channels, years of industry networking and
                         access to exclusive brokers’ buying and selling tools, facilitating your purchase or sale is our
                         business</p>
                     <ul class=" mt-[5%] text-xl  flex flex-col  max-[500px]:text-sm">
@@ -482,7 +465,7 @@
                         <h1 class="text-4xl max-[500px]:text-2xl">Confidence</h1>
 
                     </div>
-                    <p class="text-base font-[100] max-[500px]:text-sm">With our vast marketing channels, years of industry networking and
+                    <p style="font-family: 'Urbanist';" class="text-base font-regular max-[500px]:text-sm">With our vast marketing channels, years of industry networking and
                         access to exclusive brokers’ buying and selling tools, facilitating your purchase or sale is our
                         business</p>
                     <ul class="mt-[5%] text-xl  flex flex-col max-[500px]:text-sm">
@@ -499,7 +482,7 @@
                         <h1 class="text-5xl max-[500px]:text-2xl">Security</h1>
 
                     </div>
-                    <p class="text-base font-[100] max-[500px]:text-sm">If you purchase a survey on a vessel we’re showing you from our
+                    <p style="font-family: 'Urbanist';" class="text-base font-regular max-[500px]:text-sm">If you purchase a survey on a vessel we’re showing you from our
                         inventory and the surveys ends up deterring you from your purchase, Yacht Master will be more
                         than willing to reimburse you for your expenses in exchange for the survey report.
 
@@ -510,7 +493,7 @@
             </div>
         </div>
         <div style="font-family: 'Playfair Display';"  class="bg-[#013F44] overflow-hidden text-white flex flex-wrap w-full" >
-            <div class="w-[50%]   max-[1210px]:w-full  min-w-[500px]" data-aos="slide-right">
+            <div class="w-[54%]   max-[1210px]:w-full  min-w-[500px]" data-aos="slide-right">
                 <img src="./images/page2/WhatsApp Image 2023-07-17 at 7.37.58 AM (1).png" alt="" class="w-[100%]">
             </div>
             <div  class="pt-[4.1%] w-[45%] max-[440px]:py-[30px] pl-10  max-[1210px]:max-w-none  max-[1210px]:w-full min-w-[500px]   max-[530px]:min-w-0 max-[530px]:pl-0 max-[530px]:px-2"
@@ -518,17 +501,18 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-position: bottom;" >
-                <p class="text-2xl max-[390px]:text-center" data-aos="slide-down">why use a broker </p>
-                <h1 class="text-3xl max-[430px]:text-2xl max-[390px]:text-center" data-aos="slide-left">
-                    Yacht Brokers work like real estate agents.
+                <h1 class="text-4xl max-[430px]:text-2xl max-[390px]:text-center font-semibold" data-aos="slide-left">
+                    Lorem, ipsum.
                 </h1>
                 <br>
-                <p class="max-[390px]:text-sm max-[390px]:text-center text-base"data-aos="slide-up" >
-                    They are agents with whom people consult to find and purchase a boat, and whom people hire to list,
-                    represent, and sell boats for them. Traditionally, the seller pays the commissions that a yacht
-                    broker earns not the buyer. Yet, brokers have a duty to both buyer and seller in every transaction.
+                <p style="font-family: 'Urbanist';" class="max-[390px]:text-sm max-[390px]:text-center font-[200] mb-[2%] text-base"data-aos="slide-up" >
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque hic ducimus rem tempore, eligendi tenetur odio, quasi deserunt blanditiis beatae commodi voluptatum placeat quidem consectetur! Repellat corrupti ipsa alias nulla fugiat odio minus a sit quod. Aliquid, beatae voluptas.
                 </p>
-                <button class=" mt-[3%] px-[2%] py-[1%] rounded shadow  bg-white text-black">Visit our Page</button>
+                <p style="font-family: 'Urbanist';" class="max-[390px]:text-sm max-[390px]:text-center font-[200] text-base"data-aos="slide-up" >
+                    quasi deserunt blectetur! Repfugiat odio minus a sit quod. Aliquid, beatae voluptas.
+                    quasi deserunt blectetur! Repfugiat odio minus a sit quod. Aliquid, beatae voluptas.
+                                   </p>
+                <button style="font-family: 'Urbanist';" class="  mt-[3%] px-[3%] py-[2%]  shadow  bg-white text-black">Visit our Page</button>
             </div>
         </div>
         <div class="text-white overflow-hidden  py-[13%]" style="background-image: url('./images/NoPath\ -\ Copy\ \(3\)1.png');background-repeat: no-repeat; background-position: center; background-size: 40%;">
@@ -537,12 +521,12 @@
                     <h1 class="h-[18px] text-4xl opacity-[.3]" style="transform: scale(1.05)" data-aos="slide-up">Our Customers says</h1>
                     <h1 class="text-4xl text-white" data-aos="slide-up">Our Customers says</h1>
                 </div>
-            <h3 class="flex text-center max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0 mb-[4%]"data-aos="slide-left">Lorem ipsum dolor ngn d hd d
+            <h3 style="font-family: 'Urbanist';" class="flex text-center text-base font-regular max-w-[60%] w-full mt-[10px] mx-1 sm:mx-0 mb-[4%]"data-aos="slide-left">Lorem ipsum dolor ngn d hd d
                 hrejtwiorio sit amet, consectetur adipisicing elit. Enim ipsa asperiores quas.</h3>
         </div>
         <div style="transform: scale(1.3);" class="flex max-[900px]:flex-wrap  gap-[25px] justify-center w-full"data-aos="slide-right">
             
-            <div class="flex items-center text-white relative left-[12%]" style="transform: scale(.9);">
+            <div class="flex items-center text-white relative left-[12%]" style="font-family: Urbanist;transform: scale(.9);">
                 <div class="bg-[#013f44] max-w-[93%] w-full md:min-w-[390px] shadow p-2" data-aos="slide-right">
                     <div class="border-2 border-[#013f44]">
                         <div class="flex">
@@ -560,26 +544,27 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center z-[3]">
+            
+            <div class="flex items-center z-[3] text-[#013F44]" style="font-family: Urbanist; ">
                 <div class="bg-[#bfa888] max-w-[93%] w-full md:min-w-[390px] text-black shadow p-2" data-aos="slide-right">
-                    <div class="border-2 border-[#013f44]">
+                    <div class="border-2 border-[#013f44] p-[3%]">
                         <div class="flex">
                             <div class="w-[28%]">
                                 <img class="w-full"
                                     src="./images/Rectangle 24.png"
                                     alt="">
                             </div>
-                            <h1 class="mt-[20px] ml-[5px] text-xl md:text-sm">Kathryn Weber</h1>
+                            <h1 class="mt-[20px] ml-[5px] text-xl font-bold md:text-sm">Kathryn Weber</h1>
                         </div>
-                        <p class="md:text-sm text-xl m-2 font-semibold ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="md:text-sm text-xl m-2 mb-[4%] font-bold ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Quis iste voluptatum, architecto repudiandae nemo alias!</p>
                        
                     </div>
                 </div>
             </div>
-            <div class="flex items-center text-white relative right-[12%]" style="transform: scale(.9);">
+            <div class="flex items-center text-white relative right-[12%]" style="font-family: Urbanist;transform: scale(.9);">
                 <div class="bg-[#013f44] max-w-[93%]  w-full md:min-w-[390px] shadow p-2" data-aos="slide-right">
-                    <div class="border-2 border-[#013f44]">
+                    <div class="border-2 border-[#013f44] ">
                         <div class="flex">
                             <div class="w-[28%]">
                                 <img class="w-full"
@@ -602,7 +587,7 @@
             class=" bg-[#0e565c] overflow-hidden text-white flex flex-wrap w-full xl:justify-between justify-end">
             <div class="w-[33%] flex max-[1232px]:w-full max-[1232px]:flex justify-end">
 
-                <form action="visite-req-form" class="w-[70%] max-[390px]:w-[95%] w-[100%] min-[1232px]:ml-[1%]" data-aos="slide-right">
+                <form action="visite-req-form" class="w-[74%] max-[390px]:w-[95%] w-[100%] min-[1232px]:ml-[1%]" data-aos="slide-right">
                     <div class="flex justify-center">
                         <div>
                     <h1 class="h-[18px] max-[430px]:text-2xl text-4xl opacity-[.3]" style="transform: scale(1.05)" data-aos="slide-up">Request a visit</h1>
@@ -611,22 +596,23 @@
                         </div>
                     </div>
                     <label for="">
-                        <span class="md:text-sm font-semibold">Suggest Date</span>
-                        <input type="date" id="" class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%]">
+                        <span style="font-family: 'Urbanist';" class="md:text-sm font-semibold">Suggest Date</span>
+                        <input style="font-family: 'Urbanist';"type="date" id="" class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%]">
                     </label>
                     <label for="">
-                        <span class="text-sm font-semibold">Suggest Time</span>
-                        <input type="time" id="" class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%]">
+                        <span style="font-family: 'Urbanist';" class="text-sm font-semibold">Suggest Time</span>
+                        <input style="font-family: 'Urbanist';" type="time" id="" class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%]">
                     </label>
-                    <label for="">
+                    <label style="font-family: 'Urbanist';" for="">
                         <span class="text-sm font-semibold">Description</span>
-                        <textarea id=""
-                            class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%] h-[150px] outline-none"></textarea>
+                        <textarea style="font-family: 'Urbanist';" id=""
+                            class="border-2 w-full bg-transparent my-[3%] px-[3%] py-[2%] h-[150px] outline-none "> Hi, I'm Joe Ross! I'm interested in scheduling a tour of your Yacht and am available during the following times: - Apr 17th at 09:00 AM
+                             Thanks!</textarea>
                     </label>
                     <input type="submit" value="Request a Visit" class="font-bold w-full bg-white text-black font-bold max-[400px]:px-2 max-[400px]:py-1 max-[400px]:my-1 px-4 py-2 my-3">
                 </form>
             </div>
-            <div class="min-[880px]:max-w-[65%]  w-full flex md:mt-[9%] " data-aos="slide-left">
+            <div class="min-[880px]:max-w-[62%]  w-full flex  " data-aos="slide-left">
                 <img class="w-full  max-[850px]:h-auto" src="./images/page2/reqsecboat.png" alt="">
             </div>
 
@@ -636,26 +622,26 @@
                     <h1 class="text-4xl text-white" data-aos="slide-up">Our Blogs</h1>
 
                 </div>
-                <h3 class="flex text-center max-w-[600px] w-full mt-[10px] mx-1 sm:mx-0"data-aos="slide-left">Lorem ipsum dolor ngn d hd d
+                <h3 style="font-family: 'Urbanist';" class="font-regular  flex text-center max-w-[600px] w-full mt-[10px] mx-1 sm:mx-0"data-aos="slide-left">Lorem ipsum dolor ngn d hd d
                     hrejtwiorio sit amet, consectetur adipisicing elit. Enim ipsa asperiores quas.</h3>
             </div>
-            <div style="transform: scale(1.08);" class="flex mt-[2%] flex-wrap gap-[25px]    justify-center w-full"data-aos="slide-right">
-                <div class="flex items-center text-white  max-w-[330px] min-[1120px]:max-w-[22.7%]">
-                    <div class="bg-[#013f44] w-full shadow p-2" data-aos="slide-right">
+            <div style="transform: scale(1.08) ;font-family: 'Urbanist';" class="fpnt-bold flex mt-[2%] flex-wrap gap-[25px]     justify-center w-full"data-aos="slide-right">
+                <div class=" flex items-center text-white  max-w-[330px] min-[1120px]:max-w-[22.7%]">
+                    <div class="bg-[#013f44] border border-[#bfa888] w-full shadow p-2" data-aos="slide-right">
                         <div class="border-2 border-[#013f44]">
                             <div class="flex">
-                                <div class="w-[50%]">
+                                <div class="w-[50%] relative left-[-10px] top-[-9px] z-index-[-1]">
                                     <img class="w-full"
                                         src="./images/WhatsApp Image 2023-07-17 at 7.38.04 AM.jpg"
                                         alt="">
                                 </div>
-                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl">Lorem ipsum dolor sit amet consectetur.</h1>
+                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
                             </div>
-                            <p class="md:text-sm text-xl m-2 font-[100] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            <p class="md:text-sm text-xl m-2 font-bold  mb-[12%] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Quis iste voluptatum, architecto repudiandae nemo alias!</p>
                             <div
                                 class="bg-[#013f44] w-[150px] p-2 rounded-r-[12px] mt-[20px] relative left-[-10px] z-index-[-1]">
-                                Read more
+                                Read more <i class="fa fa-arrow-right"></i>
                             </div>
                             
                         </div>
@@ -665,39 +651,39 @@
                     <div class="bg-[#bfa888] w-full text-black shadow p-2" data-aos="slide-right">
                         <div class="border-2 border-[#013f44]">
                             <div class="flex">
-                                <div class="w-[50%]">
+                                <div class="w-[50%] relative left-[-10px] top-[-9px] z-index-[-1]">
                                     <img class="w-full"
                                         src="./images/NoPath - Copy (9).jpg"
                                         alt="">
                                 </div>
-                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl">Lorem ipsum dolor sit amet consectetur.</h1>
+                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
                             </div>
-                            <p class="md:text-sm text-xl m-2 font-semibold ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            <p class="md:text-sm text-xl m-2 font-bold mb-[12%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Quis iste voluptatum, architecto repudiandae nemo alias!</p>
                             <div
-                                class="bg-[#013f44] w-[150px] p-2 rounded-r-[12px] mt-[20px] relative left-[-10px] z-index-[-1]">
-                                Read more
+                                class="bg-[#013f44] text-white w-[150px] p-2 rounded-r-[12px] mt-[20px] relative left-[-10px] z-index-[-1]">
+                                Read more <i class="fa fa-arrow-right"></i>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center text-white  max-w-[330px] min-[1120px]:max-w-[22.7%]">
-                    <div class="bg-[#013f44] w-full shadow p-2" data-aos="slide-right">
+                <div class=" flex items-center text-white  max-w-[330px] min-[1120px]:max-w-[22.7%]">
+                    <div class="bg-[#013f44] border border-[#bfa888] w-full shadow p-2" data-aos="slide-right">
                         <div class="border-2 border-[#013f44]">
                             <div class="flex">
                                 <div class="w-[50%]">
-                                    <img class="w-full"
+                                    <img class="w-full relative left-[-10px] top-[-9px] z-index-[-1]"
                                         src="./images/NoPath - Copy (8).jpg"
                                         alt="">
                                 </div>
-                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl">Lorem ipsum dolor sit amet consectetur.</h1>
+                                <h1 class="mt-[20px] ml-[5px] md:text-sm text-xl font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
                             </div>
-                            <p class="md:text-sm text-xl m-2 font-[100] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            <p class="md:text-sm text-xl m-2 font-bold mb-[12%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Quis iste voluptatum, architecto repudiandae nemo alias!</p>
                             <div
                                 class="bg-[#013f44] w-[150px] p-2 rounded-r-[12px] mt-[20px] relative left-[-10px] z-index-[-1]">
-                                Read more
+                                Read more <i class="fa fa-arrow-right"></i>
                             </div>
                             
                         </div>
@@ -705,18 +691,18 @@
                 </div>
             </div>
         </div>
-        <div class="w-full  p-[40px]" data-aos="fade-up"
+        <div class="w-full  p-[20px]" data-aos="fade-up"
             style="background-image: url('./images/page2/h1_images_bg-min.jpg'); background-size: cover;">
 
-            <div class="border-4 border-[#Bfa888] w-full p-[5%] flex justify-center items-center">
-                <form action="" class="p-4 rounded border-white border text-white max-w-[80%] md:max-w-[70%] w-full  flex flex-col items-center justify-end py-[9%]" style="    background: #b1adad29;
+            <div class="border-2 border-[#Bfa888] w-full p-[4%] flex justify-center items-center">
+                <form action="" class="  border-[#Bfa888] border text-white max-w-[80%] md:max-w-[52%] w-full  flex flex-col items-center justify-end py-[4%]" style="    background: #ffffff59;
                 ">
-                    <h1 class="font-semibold text-3xl">Subscribe Our Newsletter</h1>
-                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum!</p>
-                    <div class="flex max-w-[80%] w-full justify-center mt-2">
+                    <h1 class="font-regular text-2xl">Subscribe Our Newsletter</h1>
+                    <p style="font-family: 'Urbanist';" class="text-base " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum!</p>
+                    <div  style="font-family: 'Urbanist';" class="flex max-w-[80%] w-full justify-center mt-2 overflow-hidden rounded">
                         <input type="email" name="" placeholder="Email.." id=""
-                            class="outline-none border px-[2%] py-[1%] max-w-[90%] w-full">
-                        <input type="submit" value="Subscribe" class="text-white font-semibold bg-[#Bfa888] px-[2%] py-[3%]">
+                            class="outline-none border px-[1%] py-[.5%] max-w-[90%] w-full">
+                        <input type="submit" value="Subscribe" class="text-white font-semibold bg-[#Bfa888] px-[4%] py-[3%]">
                     </div>
                 </form>
             </div>
@@ -740,13 +726,15 @@
        </div>
 
 
-       <footer style="background-image:linear-gradient(#014d53, #9a030000 25%) , url('../images/Group\ 35005.jpg'); background-size: cover;"
+       <footer 
        class="text-white ">
-       <div class="py-[3%] w-full max-w-screen-xl mx-auto p-4 md:py-8">
-           <div class="sm:flex sm:items-center sm:justify-between">
-               <img src="../images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
+       <div style="background-image: linear-gradient(360deg , #112F42, #9a030000 25%) , linear-gradient(#014d53, #9a030000 25%) , url('./images/Group\ 35005.jpg'); background-size: cover;" class="py-[3%] w-full  p-4 md:pb-[8%] md:pt-[6%]">
+           <div class="sm:flex sm:items-center sm:justify-center md:px-[3%] items-flex-start" style="align-items: flex-start;">
+             <div class="max-w-[20%] border md:mr-[7%]">
+                <img src="./images/footer/logo-footer2-removebg-preview.png" class="w-[90%]" alt="logo" />
+             </div>
 
-               <div class="flex flex-wrap gap-[50px] w-full justify-center">
+               <div class="flex flex-wrap gap-[50px] w-full justify-between">
                    <ul class="flex flex-col items-start text-[17px] font-[100]">
                        <h1 class="text-[23px] font-semibold">Other links</h1>
                        <li>
@@ -799,12 +787,11 @@
                    </ul>
                </div>
            </div>
-           
        </div>
        <div>
            <div class='bg-[#112F42] py-2'>
-               <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-           <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+               <hr class="my-6 border-[#BFA888] sm:mx-auto dark:border-gray-700 lg:my-8" />
+           <span class="block text-base text-white sm:text-center ">© 2023 <a
                    href="#" class="hover:underline">Yacht™</a>. All Rights Reserved.</span>
            </div>
            
