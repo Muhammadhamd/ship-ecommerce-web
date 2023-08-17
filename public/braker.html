@@ -9,61 +9,69 @@
   <link rel="stylesheet" href="../style/animation.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../style/navslider.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body
-  class="bg-[#0e565c] max:[600px]:text-[12px] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px] ">
+  class="bg-[#014d53] max:[600px]:text-[12px] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px] ">
   <div>
     <div class=" text-white "
       style="background-image:linear-gradient( 360deg , #014d53, #9a030000 15%)  , url('../images/howWeHelp/Frame\ 1.jpg'); background-size: cover;">
-      <nav class="text-[90%] font-[100]">
+      <nav style="font-family: 'Urbanist';" class="text-[90%] font-[100]">
         <!-- main menu  -->
         <div class="main_menu">
           <ul>
-            <li class="font-semibold" style="--i: 1"><span>
-                <div></div>
-              </span> <a href="../home.html">Home</a>
-
+            <li class="font-semibold" style="--i: 1"><span><div></div></span> <a href="../">Home</a>
+            
             </li>
-            <li style="--i: 2"><span>
-                <div></div>
-              </span> <a href="./contact.html">Dealer info</a>
-
+            <li><span><div></div></span> <a href="./contact.html" >Dealer info</a>
+             <div class="slide-show">
+                <span class="w-full p-[2%] max-w-[50%] flex flex-col justify-center items-baseline" style="width: 100%; align-items: baseline;">
+                    <a style="color: #000000; font-weight: bolder;" href="./about.html">About us</a>
+                    <a style="color: #000000; font-weight: bolder;" href="./braker.html">Why use broker?</a>
+                    <a style="color: #000000; font-weight: bolder;" href="./contact.html">Contact us</a>
+                </span>
+                <span class="w-full max-w-[50%]" style="width: 100%;">
+                    <img class="w-full" src="../images/Frame 8.jpg" alt="">
+                </span>
+             </div>
             </li>
-            <li style="--i: 3"><span>
-                <div></div>
-              </span> <a href="./shop.html">boat for sale</a></li>
-            <li style="--i: 4"><span>
-                <div></div>
-              </span> <a href="./sellpage.html">Sale a boat</a></li>
+            <li style="--i: 2"><span><div></div></span> <a href="./shop.html" >boat for sale</a></li>
+            <li style="--i: 3"><span><div></div></span> <a href="./sellpage.html" >Sale a boat</a></li>
           </ul>
-          <div class="border border-[rgb(191_168_138)] w-[30%]" style="--i: 5">
+          <div class="border border-[rgb(191_168_138)] w-[35%]" style="--i: 5">
             <!-- middle logo  -->
             <img src="../images/shiplogo.png" class="w-[100%]">
           </div>
         </div>
         <!-- large Screen menu  -->
         <ul id="menu">
-          <li class="--i:6"><span>
-              <div></div>
-            </span> <a href="./services.html" style="">Service</a></li>
-          <li class="--i:7"><span>
-              <div></div>
-            </span> <a href="./didyouknow.html" style="">Did you know?</a></li>
-          <li style="--:8" class="text-[120%]"><span>
-              <div></div>
-            </span>
-            <a href=""><i class="bi bi-heart"></i></a>
+          <li class="--i:6"><span><div></div></span> <a href="./services.html" style="">Service</a>
+            <div class="slide-show">
+                <span class="w-full p-[2%] max-w-[50%] flex flex-col justify-center items-baseline" style="width: 100%; align-items: baseline;">
+                    <a style="color: #000000; font-weight: bolder;" href="./services.html">Our services</a>
+                    <a style="color: #000000; font-weight: bolder;" href="./howWeHelp.html">How we help</a>
+                </span>
+                <span class="w-full max-w-[50%]" style="width: 100%;">
+                    <img class="w-full" src="../images/Frame 8.jpg" alt="">
+                </span>
+             </div>
+        </li>
+          <li class="--i:7"><span><div></div></span> <a href="./didyouknow.html" style="">Did you know?</a>
+           
+        </li>
+          <li style="--:8" class="text-[120%]"><span><div></div></span> 
+            <a href=""><i class="bi bi-heart" ></i></a>
           </li>
-          <li style="--i:9" class="text-[130%] mr-4"><span>
-              <div></div>
-            </span>
+          <li style="--i:9" class="text-[130%] mr-4" ><span><div></div></span> 
             <a href=""><i class="bi bi-basket2"></i></a>
           </li>
           <button class="btn" id="loginbtn" style="--i:10">Login</button>
         </ul>
-
+    
         <!-- drop down components  -->
         <div class="menu">
           <div class="toggle_btn">
@@ -74,7 +82,7 @@
             <li><a href="./about.html">Dealer info</a></li>
             <li><a href="./shop.html">boat for sale</a></li>
             <li><a href="./sellpage.html">Sale a boat</a></li>
-
+    
             <li><a href="./services.html">Service</a></li>
             <li><a href="./didyouknow.html">Did you know?</a></li>
             <li>
@@ -91,22 +99,22 @@
         </div>
       </nav>
       <div class="h-[60vh] flex justify-center items-center">
-        <h1 class="text-5xl font-semibold" style="font-family: 'Playfair Display';">Why use a Broker</h1>
+        <h1 class="text-4xl font-[600]" style="font-family: 'Playfair Display';">Why use a Broker</h1>
 
       </div>
     </div>
 
     <div class="flex px-[10%] py-[4%]  text-white">
-      <div class="max-w-[50%] mr-3">
-        <h1 class="text-4xl">Lorem, ipsum </h1>
-        <p class="text-base text-[#e8e8e8] my-[1%] w-[100]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+      <div class="max-w-[44%] mr-[14%]">
+        <h1 class="text-4xl" style="font-family: 'Playfair';">LOREM IPSUM </h1>
+        <p class="text-[110%] text-[#e8e8e8] my-[1%] w-[100]" style="font-family: 'Urbanist';">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
           beatae porro minus mollitia delectus doloribus reprehenderit et, fugiat voluptatibus necessitatibus! Lorem
           ipsum dolor sit, amet consectetur adipisicing elit. Sit vel pariatur harum qui a. Ab nam, cumque quasi
           voluptatem, explicabo culpa, hic perferendis quam inventore modi tempore autem distinctio dolore.</p>
-        <p class="text-base text-[#e8e8e8] my-[1%] w-[100]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+        <p class="text-[110%] text-[#e8e8e8] my-[1%] w-[100]" style="font-family: 'Urbanist';">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
           vel pariatur harum qui a. Ab nam, cumque quasi voluptatem, explicabo culpa, hic perferendis quam inventore
           modi tempore autem distinctio dolore.</p>
-        <button class="px-[2%] py-[1%] mt-[3%] rounded bg-white text-black">Visite our page</button>
+        <button class="px-[2.5%] py-[1.5%] mt-[3%] text-[120%] rounded shadow bg-white text-black" style="font-family: 'Urbanist';">Visite our page</button>
       </div>
       <div class="max-w-[30%]">
         <img src="../images/Group 35497.png" alt="" class="w-full">
@@ -117,14 +125,22 @@
         <img src="../images/logo.png" class="max-w-[26%]" alt="">
         <h1 class="text-2xl text-semibold">Why use a broker to help you to buy a boat</h1>
       </div>
-      <div>
+      <div style="font-family: 'Urbanist';">
         <div>
-
+         <p class="text-[100%] font-[400] max-w-[90%] text-[#e8e8e8] ml-[5%]">
+          Yacht Brokers work like real estate agents. They are agents whom people consult to find and purchase a boat, and whom people hire to list, represent, and sell boats for them. Traditionally, the seller pays the commissions that a yacht broker earns – not the buyer, yet brokers have a duty to both buyer and seller in every transaction.
+<br><br>
+          Boat Dealers represent new boat lines. They often take “trade-ins” to facilitate the sale of a new boat. Dealers advertise their trade-ins, often at very good buys. Some dealers will refurbish the boat before putting it on the market. Some dealers offer a pre-owned boat warranty program, similar to the automotive industry, particularly in smaller craft.
+          <br><br>
+          
+          The broker’s role for the buyer
+         </p>
+          
         </div>
-        <div class="mx-[4%] flex flex-col gap-6">
-          <div class="text-white font-[100] flex items-start justify-center">
+        <div class="mx-[4%] flex flex-col ">
+          <div class="text-white font-[400] flex items-start justify-center items-baseline gap-[2em]">
             <div class="text-[200%] flex items-start">•</div>
-            <p class="text-[100%] font-[100] max-w-[90%] text-[#e8e8e8]">
+            <p class="text-[100%]  max-w-[90%] text-[#e8e8e8]">
               Most pre-owned boats advertised on YachtWorld are either a “central agency listing" of a yacht broker, or
               a trade-in from a new boat dealer. It you are viewing a
               broker listing or a trade-in, the listing broker or dealer is likely to know the vessel inside and out.
@@ -140,7 +156,7 @@
 
 
 
-          <div class="text-white font-[100] flex justify-center ">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em] ">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%]  text-[#e8e8e8]">
@@ -158,7 +174,7 @@
             </p>
           </div>
 
-          <div class="text-white font-[100] flex justify-center ">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em] ">
             <div class="text-[150%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -168,7 +184,7 @@
 
             </p>
           </div>
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -183,7 +199,7 @@
             </p>
           </div>
 
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -200,7 +216,7 @@
             </p>
           </div>
 
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -216,7 +232,7 @@
             </p>
           </div>
 
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -226,7 +242,7 @@
             </p>
           </div>
 
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -237,7 +253,7 @@
 
             </p>
           </div>
-          <div class="text-white font-[100] flex justify-center">
+          <div class="text-white font-[400] flex justify-center items-baseline gap-[2em]">
             <div class="text-[200%]">•</div>
 
             <p class="text-base max-w-[90%] text-[#e8e8e8]">
@@ -267,77 +283,77 @@
       </div>
 
     </div>
-    <footer
-      style="background-image:linear-gradient(#014d53, #9a030000 25%) , url('../images/Group\ 35005.jpg'); background-size: cover;"
-      class="text-white ">
-      <div class="py-[3%] w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <img src="../images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
-
-          <div class="flex flex-wrap gap-[50px] w-full justify-center">
-            <ul class="flex flex-col items-start text-[17px] font-[100]">
-              <h1 class="text-[23px] font-semibold">Other links</h1>
-              <li>
-                <a href="../home.html" class="hover:underline md:">Home</a>
-              </li>
-              <li>
-                <a href="./about.html" class=" hover:underline md: ">About</a>
-              </li>
-              <li>
-                <a href="./contact.html" class="hover:underline">Contact</a>
-              </li>
-              <li>
-                <a href="./howWeHelp.html" class=" hover:underline md: ">How we help</a>
-              </li>
-
-              <li>
-                <a href="./didyouknow.html" class="hover:underline">Did you know</a>
-              </li>
-            </ul>
-            <ul class="flex flex-col items-start text-[17px] font-[100]">
-              <h1 class="text-[23px] font-semibold"> Other links</h1>
-              <li>
-                <a href="./shop.html" class=" hover:underline md: ">Boats for Sale</a>
-              </li>
-              <li>
-                <a href="sellpage.html" class="hover:underline md:">Sell a Boat</a>
-              </li>
-              <li>
-                <a href="braker.html" class=" hover:underline md: ">Why use a Broker?</a>
-              </li>
-              <li>
-                <a href="" class="hover:underline">Financing</a>
-              </li>
-            </ul>
-            <ul class="flex flex-col items-start text-[17px] font-[100]">
-              <h1 class="text-[23px] font-semibold">Contact Information</h1>
-              <li>
-                <a href="#" class=" hover:underline md: ">102 Lakeshore Rd E, Mississauga,
-                  ON L5G 1E3, Canada</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline md:">justin.ramirez@mail.com</a>
-              </li>
-              <li>
-                <a href="#" class=" hover:underline md: ">(268)013-4757</a>
-              </li>
-              <li>
-                <a href="./contact.html" class="hover:underline">Contact</a>
-              </li>
-            </ul>
+    <footer 
+    class="text-white ">
+    <div style="background-image: linear-gradient(360deg , #112F42, #9a030000 25%) , linear-gradient(#014d53, #9a030000 25%) , url('../images/Group\ 35005.jpg'); background-size: cover;" class="py-[3%] w-full  p-4 md:pb-[8%] md:pt-[6%]">
+        <div class="sm:flex sm:items-center sm:justify-center md:px-[3%] items-flex-start" style="align-items: flex-start;">
+          <div class="max-w-[20%] border md:mr-[7%]">
+             <img src="../images/footer/logo-footer2-removebg-preview.png" class="w-[90%]" alt="logo" />
           </div>
-        </div>
 
-      </div>
-      <div>
+            <div class="flex flex-wrap gap-[50px] w-full justify-between">
+                <ul class="flex flex-col items-start text-[17px] font-[100]">
+                    <h1 class="text-[23px] font-semibold">Other links</h1>
+                    <li>
+                        <a href="../home.html" class="hover:underline md:">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class=" hover:underline md: ">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="hover:underline">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./howWeHelp.html" class=" hover:underline md: ">How we help</a>
+                    </li>
+
+                    <li>
+                        <a href="./didyouknow.html" class="hover:underline">Did you know</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col items-start text-[17px] font-[100]">
+                    <h1 class="text-[23px] font-semibold"> Other links</h1>
+                    <li>
+                        <a href="./shop.html" class=" hover:underline md: ">Boats for Sale</a>
+                    </li>
+                    <li>
+                        <a href="sellpage.html" class="hover:underline md:">Sell a Boat</a>
+                    </li>
+                    <li>
+                        <a href="braker.html" class=" hover:underline md: ">Why use a Broker?</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline">Financing</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col items-start text-[17px] font-[100]">
+                    <h1 class="text-[23px] font-semibold">Contact Information</h1>
+                    <li>
+                        <a href="#" class=" hover:underline md: ">102 Lakeshore Rd E, Mississauga,
+                            ON L5G 1E3, Canada</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline md:">justin.ramirez@mail.com</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" hover:underline md: ">(268)013-4757</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
         <div class='bg-[#112F42] py-2'>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#"
-              class="hover:underline">Yacht™</a>. All Rights Reserved.</span>
+            <hr class="my-6 border-[#BFA888] sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-base text-white sm:text-center ">© 2023 <a
+                href="#" class="hover:underline">Yacht™</a>. All Rights Reserved.</span>
         </div>
-
-      </div>
-    </footer>
+        
+    </div>
+</footer>
   </div>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
