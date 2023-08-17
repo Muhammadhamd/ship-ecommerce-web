@@ -33,7 +33,28 @@
             display: none;
         }
     }
-
+     ul li .slide-show{
+        width: 300px;
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 40px;
+        display: none;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+        overflow: hidden;
+        transition: ease-in-out 1s;
+    }
+      ul li .slide-show div{
+       
+        color: black;
+        width: 100%;
+        /* display: none; */
+    }
+     ul li:hover .slide-show{
+        display: flex;
+    }
 </style>
 
 <body class="bg-[#0e565c] max:[1400px]:text-[16px] min-[1450px]:text-[17px] min-[1550px]:text-[18px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1650px]:text-[19px] min-[1750px]:text-[20px] min-[1850px]:text-[21px] min-[1950px]:text-[22px] min-[2050px]:text-[23px] min-[2150px]:text-[24px] min-[2250px]:text-[25px] min-[2350px]:text-[26px] min-[2450px]:text-[26px] min-[2550px]:text-[27px] min-[2650px]:text-[28px] min-[2750px]:text-[29px] min-[2850px]:text-[30px] min-[2950px]:text-[31px] min-[3050px]:text-[32px] ">
@@ -47,11 +68,20 @@
                     <li class="font-semibold" style="--i: 1"><span><div></div></span> <a href="../">Home</a>
                     
                     </li>
-                    <li style="--i: 2"><span><div></div></span> <a href="./public/contact.html" >Dealer info</a>
-                     
+                    <li><span><div></div></span> <a href="./public/contact.html" >Dealer info</a>
+                     <div class="slide-show">
+                        <span class="w-full p-[2%] max-w-[50%] flex flex-col justify-center items-baseline" style="width: 100%; align-items: baseline;">
+                            <a style="color: #000000; font-weight: bolder;" href="./public/about.html">About us</a>
+                            <a style="color: #000000; font-weight: bolder;" href="./public/braker.html">Why use broker?</a>
+                            <a style="color: #000000; font-weight: bolder;" href="./public/contact.html">Contact us</a>
+                        </span>
+                        <span class="w-full max-w-[50%]" style="width: 100%;">
+                            <img class="w-full" src="./images/Frame 8.jpg" alt="">
+                        </span>
+                     </div>
                     </li>
-                    <li style="--i: 3"><span><div></div></span> <a href="./public/shop.html" >boat for sale</a></li>
-                    <li style="--i: 4"><span><div></div></span> <a href="./public/sellpage.html" >Sale a boat</a></li>
+                    <li style="--i: 2"><span><div></div></span> <a href="./public/shop.html" >boat for sale</a></li>
+                    <li style="--i: 3"><span><div></div></span> <a href="./public/sellpage.html" >Sale a boat</a></li>
                   </ul>
                   <div class="border border-[rgb(191_168_138)] w-[35%]" style="--i: 5">
                     <!-- middle logo  -->
@@ -61,7 +91,17 @@
                 <!-- large Screen menu  -->
                 <ul id="menu">
                   <li class="--i:6"><span><div></div></span> <a href="./public/services.html" style="">Service</a></li>
-                  <li class="--i:7"><span><div></div></span> <a href="./public/didyouknow.html" style="">Did you know?</a></li>
+                  <li class="--i:7"><span><div></div></span> <a href="./public/didyouknow.html" style="">Did you know?</a>
+                    <div class="slide-show">
+                        <span class="w-full p-[2%] max-w-[50%] flex flex-col justify-center items-baseline" style="width: 100%; align-items: baseline;">
+                            <a style="color: #000000; font-weight: bolder;" href="./public/services.html">Our services</a>
+                            <a style="color: #000000; font-weight: bolder;" href="./public/howWeHelp.html">How we help</a>
+                        </span>
+                        <span class="w-full max-w-[50%]" style="width: 100%;">
+                            <img class="w-full" src="./images/Frame 8.jpg" alt="">
+                        </span>
+                     </div>
+                </li>
                   <li style="--:8" class="text-[120%]"><span><div></div></span> 
                     <a href=""><i class="bi bi-heart" ></i></a>
                   </li>
@@ -101,13 +141,13 @@
                 <div class=" ml-[20px]  md:ml-[80px] text-xl flex flex-col justify-center max-h-[50vh] h-[100%]">
                     <ul class="gap-[10px] text-xl mt-2">
                         <li >
-                           <a href=""><i class="shadow-[0px_0px_2px_1px_black]  hover:scale-[1.1]  hover:shadow-[0px_0px_7px_black]  fa fa-facebook-square"></i></a>
+                           <a href=""><i class="shadow-[0px_0px_2px_1px_black]  hover:scale-[1.3]  hover:shadow-[0px_0px_7px_black]  fa fa-facebook-square"></i></a>
                         </li>
                         <li >
-                            <a href=""><i class="  hover:scale-[1.1] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-twitter-square"></i></a>
+                            <a href=""><i class="  hover:scale-[1.3] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-twitter-square"></i></a>
                          </li>
                          <li >
-                           <a href=""><i class=" hover:scale-[1.1] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-instagram"></i></a>
+                           <a href=""><i class=" hover:scale-[1.3] shadow-[0px_0px_2px_black] hover:shadow-[0px_0px_7px_black]  fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -116,7 +156,7 @@
                 </div>
                 <div class=" mr-[20px]  md:mr-[80px] text-base flex flex-col justify-center max-h-[50vh] h-[100%]">
                     <ul class="gap-[10px]">
-                        <li class="font-[100] hover:scale-[1.1]">
+                        <li class="font-[100] hover:scale-[1.1] scale-[.9]">
                            <a class="flex flex-col  max-[500px]:block" href=""><i>Call</i> <div class="px-[1%] py-[2%] rounded-full bg-white flex justify-center items-center font-bold"><i class="text-black bi bi-telephone-fill"></i></div> <i>us</i></a>
                         </li>
                         
@@ -127,7 +167,7 @@
         </div>
         
        <div style="font-family: 'Playfair Display';">
-        <div class="bg-[#014d53] w-full text-white pt-[4%] pb-[4%]" style="background-image: url('./images/services-bg-2.png');    background-size: cover; font-family: 'Playfair Display';
+        <div class="bg-[#014d53] w-full text-white pt-[4%] pb-[4%]" style="background-image: url('./images/services-bg-2.png');    background-size: cover; font-family: 'Playfair Display'; 
         background-position-y: -184px;
         background-repeat: no-repeat;" >
             <div class="flex items-center flex-col">
@@ -209,7 +249,7 @@
             <div class="   max-[1095px]:w-full w-[50%]" data-aos="slide-right">
                 <img src="./images/Frame 10 (1).jpg" alt="" class="w-[100%]">
             </div>
-            <div class="pt-[60px] pl-10  max-[1095px]:w-full w-[50%]"data-aos="slide-left" style="background-image: url('./images/slider2.png'); background-size: 90%;">
+            <div class="pt-[60px] pl-10  max-[1095px]:w-full w-[50%]"data-aos="slide-left" style="background-image: url('./images/slider2.png'); background-size: 100%;background-position: bottom;">
                 <p class="text-2xl font-[500]">Why USE A BROKER</p>
                 <h1 class="text-3xl font-[500] max-w-[90%]">
                     Yacht Brokers work like real estate agents
@@ -223,7 +263,7 @@
                 <button class="mt-[2%] bg-white shadow px-[2%] py-[1%] text-black">Read more</button>
             </div>
         </div>
-        <div class="bg-[#014d53] w-full text-white pt-4 pb-[30px] "
+        <div class="bg-[#014d53] w-full text-white pt-[8%] pb-[30px] "
             style="background-image:  url('./images/page2/hookbg2.png'); background-size: cover;">
 
             <div class="flex items-center flex-col">
@@ -399,7 +439,7 @@
             </div>
         </div>
         
-        <div class="bg-[#014d53] overflow-hidden w-full text-white   px-[5%] pt-[2%]"
+        <div class="bg-[#014d53] overflow-hidden w-full text-white   px-[5%] py-[3%]"
             style="background-image:linear-gradient(   #014d53, #9a030000 35%), url('./images/Frame\ 11.jpg'); background-size: cover;">
             <div class="w-full flex justify-start mb-[5%]" data-aos="slide-left">
                 <div class="md:max-w-[37.1%]" >
@@ -412,9 +452,9 @@
                         lock you in. Our Sales services are completely risk free. Cancel your listing at anytime for any
                         reason at all, at no charge.</p>
                     <ul class="mt-[5%] text-xl gap-4 flex flex-col max-[500px]:text-sm">
-                        <li class="flex gap-2"><img src="./images/listdot.png"  class="max-w-[20px] h-[20px]"  alt=""> Vast connections</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png"  class="max-w-[20px] h-[20px]" alt=""> Exposure</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Smooth Process</li>
+                        <li class="flex  items-center gap-2"><img src="./images/listdot.png"  class="max-w-[20px] h-[20px]"  alt=""> Vast connections</li>
+                        <li class="flex items-center gap-2"><img src="./images/listdot.png"  class="max-w-[20px] h-[20px]" alt=""> Exposure</li>
+                        <li class="flex items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Smooth Process</li>
                     </ul>
                 </div>
             </div>
@@ -429,9 +469,9 @@
                         access to exclusive brokers’ buying and selling tools, facilitating your purchase or sale is our
                         business</p>
                     <ul class=" mt-[5%] text-xl  flex flex-col  max-[500px]:text-sm">
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Competency</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Commitment</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Connection</li>
+                        <li class="flex  items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Competency</li>
+                        <li class="flex  items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Commitment</li>
+                        <li class="flex items-center  gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Connection</li>
                     </ul>
                 </div>
             </div>
@@ -446,9 +486,9 @@
                         access to exclusive brokers’ buying and selling tools, facilitating your purchase or sale is our
                         business</p>
                     <ul class="mt-[5%] text-xl  flex flex-col max-[500px]:text-sm">
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Vast connections</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Exposure</li>
-                        <li class="flex gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Smooth Process</li>
+                        <li class="flex items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Vast connections</li>
+                        <li class="flex items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Exposure</li>
+                        <li class="flex items-center gap-2"><img src="./images/listdot.png" class="max-w-[20px] h-[20px]"  alt=""> Smooth Process</li>
                     </ul>
                 </div>
             </div>
@@ -476,7 +516,8 @@
             <div  class="pt-[4.1%] w-[45%] max-[440px]:py-[30px] pl-10  max-[1210px]:max-w-none  max-[1210px]:w-full min-w-[500px]   max-[530px]:min-w-0 max-[530px]:pl-0 max-[530px]:px-2"
                 style="background-image: url('./images/page2/Group\ 35484.png');    background-size: 100%;
                 background-repeat: no-repeat;
-                background-position: center;" >
+                background-position: center;
+                background-position: bottom;" >
                 <p class="text-2xl max-[390px]:text-center" data-aos="slide-down">why use a broker </p>
                 <h1 class="text-3xl max-[430px]:text-2xl max-[390px]:text-center" data-aos="slide-left">
                     Yacht Brokers work like real estate agents.
@@ -668,8 +709,8 @@
             style="background-image: url('./images/page2/h1_images_bg-min.jpg'); background-size: cover;">
 
             <div class="border-4 border-[#Bfa888] w-full p-[5%] flex justify-center items-center">
-                <form action="" class="p-4 rounded border-white border text-white max-w-[80%] md:max-w-[77%] w-full  flex flex-col items-center justify-end py-[9%]" style="    background: #b1adad29;
-                backdrop-filter: blur(6px);">
+                <form action="" class="p-4 rounded border-white border text-white max-w-[80%] md:max-w-[70%] w-full  flex flex-col items-center justify-end py-[9%]" style="    background: #b1adad29;
+                ">
                     <h1 class="font-semibold text-3xl">Subscribe Our Newsletter</h1>
                     <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cum!</p>
                     <div class="flex max-w-[80%] w-full justify-center mt-2">
@@ -699,76 +740,76 @@
        </div>
 
 
-                    <footer style=" background-image:linear-gradient(#014d53, #9a030000 25%) , url('./images/Group\ 35005.jpg'); background-size: cover;"
-                        class="text-white">
-                        <div class="w-full  p-[4%] max-w-screen-xl mx-auto p-[6%] md:py-8">
-                            <div class="sm:flex sm:items-center sm:justify-between">
-                                <img src="./images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
+       <footer style="background-image:linear-gradient(#014d53, #9a030000 25%) , url('../images/Group\ 35005.jpg'); background-size: cover;"
+       class="text-white ">
+       <div class="py-[3%] w-full max-w-screen-xl mx-auto p-4 md:py-8">
+           <div class="sm:flex sm:items-center sm:justify-between">
+               <img src="../images/footer/logo-footer2-removebg-preview.png" class=" mr-3" alt="logo" />
 
-                                <div class="flex flex-wrap gap-[50px] w-full justify-center">
-                                    <ul class="flex flex-col items-start text-[17px] font-[100]">
-                                        <h1 class="text-[23px] font-semibold">Other links</h1>
-                                        <li>
-                                            <a href="#" class="hover:underline md:">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:underline">Contact</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">How we help</a>
-                                        </li>
+               <div class="flex flex-wrap gap-[50px] w-full justify-center">
+                   <ul class="flex flex-col items-start text-[17px] font-[100]">
+                       <h1 class="text-[23px] font-semibold">Other links</h1>
+                       <li>
+                           <a href="../home.html" class="hover:underline md:">Home</a>
+                       </li>
+                       <li>
+                           <a href="./about.html" class=" hover:underline md: ">About</a>
+                       </li>
+                       <li>
+                           <a href="./contact.html" class="hover:underline">Contact</a>
+                       </li>
+                       <li>
+                           <a href="./howWeHelp.html" class=" hover:underline md: ">How we help</a>
+                       </li>
 
-                                        <li>
-                                            <a href="#" class="hover:underline">Did you know</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="flex flex-col items-start text-[17px] font-[100]">
-                                        <h1 class="text-[23px] font-semibold"> Other links</h1>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">Boats for Sale</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:underline md:">Sell a Boat</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">Why use a Broker?</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:underline">Financing</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="flex flex-col items-start text-[17px] font-[100]">
-                                        <h1 class="text-[23px] font-semibold">Contact Information</h1>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">102 Lakeshore Rd E, Mississauga,
-                                                ON L5G 1E3, Canada</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:underline md:">justin.ramirez@mail.com</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class=" hover:underline md: ">(268)013-4757</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="hover:underline">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div>
-                            <div class='bg-[#112F42] py-1'>
-                                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                                    href="#" class="hover:underline">Yacht™</a>. All Rights Reserved.</span>
-                            </div>
-                            
-                        </div>
-                    </footer>
+                       <li>
+                           <a href="./didyouknow.html" class="hover:underline">Did you know</a>
+                       </li>
+                   </ul>
+                   <ul class="flex flex-col items-start text-[17px] font-[100]">
+                       <h1 class="text-[23px] font-semibold"> Other links</h1>
+                       <li>
+                           <a href="./shop.html" class=" hover:underline md: ">Boats for Sale</a>
+                       </li>
+                       <li>
+                           <a href="sellpage.html" class="hover:underline md:">Sell a Boat</a>
+                       </li>
+                       <li>
+                           <a href="braker.html" class=" hover:underline md: ">Why use a Broker?</a>
+                       </li>
+                       <li>
+                           <a href="" class="hover:underline">Financing</a>
+                       </li>
+                   </ul>
+                   <ul class="flex flex-col items-start text-[17px] font-[100]">
+                       <h1 class="text-[23px] font-semibold">Contact Information</h1>
+                       <li>
+                           <a href="#" class=" hover:underline md: ">102 Lakeshore Rd E, Mississauga,
+                               ON L5G 1E3, Canada</a>
+                       </li>
+                       <li>
+                           <a href="#" class="hover:underline md:">justin.ramirez@mail.com</a>
+                       </li>
+                       <li>
+                           <a href="#" class=" hover:underline md: ">(268)013-4757</a>
+                       </li>
+                       <li>
+                           <a href="./contact.html" class="hover:underline">Contact</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           
+       </div>
+       <div>
+           <div class='bg-[#112F42] py-2'>
+               <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+           <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                   href="#" class="hover:underline">Yacht™</a>. All Rights Reserved.</span>
+           </div>
+           
+       </div>
+   </footer>
 
 
             </div>
